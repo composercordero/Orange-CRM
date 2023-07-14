@@ -1,0 +1,29 @@
+#footer {
+    background-color: blue;
+    padding:15px ;
+    padding-bottom: 150px;
+}
+
+h4 {
+    color: white;
+}
+.footer{
+    color: white;
+}
+
+.btn-active{
+    background-color: greenyellow;
+    color: white;
+    padding-right: 40px;
+}
+
+.btn-primary{
+    background-color: white;
+    color: blue;
+    padding-left: 20px;
+}
+#menu li{
+    color: white;
+    display: inline;
+    
+}
