@@ -5,6 +5,18 @@
 /* HEADER */
 
 
+.title{
+    font-size: 5rem;
+}
+
+.trial p{
+    font-size: 0.8rem;
+}
+
+.trial i{
+    color: var(--bs-primary)
+}
+
 /* MAIN */
 
 .separator{
