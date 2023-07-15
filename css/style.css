@@ -49,5 +49,13 @@
     width: auto;
 }
 
+.modal-body{
+    padding: 30px;
+}
+
+.btn-small{
+    width: 50%;
+}
+
 
 /* FOOTER */
