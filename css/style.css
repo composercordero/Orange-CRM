@@ -5,7 +5,35 @@
 /* HEADER */
 
 
+.title{
+    font-size: 5rem;
+}
+
+.trial p{
+    font-size: 0.8rem;
+}
+
+.trial i{
+    color: var(--bs-primary)
+}
+
 /* MAIN */
+
+.separator{
+    border: 1px solid var(--bs-secondary);
+    margin: auto;
+    width: 50vw;
+}
+
+.layout:hover{
+    background-color: var(--bs-primary);
+    color: white;
+    transition: 0.4s;
+}
+
+.layout i {
+    font-size: 6rem
+}
 
 
 
