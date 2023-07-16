@@ -10,16 +10,26 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+    <script>
+    $(function(){
+    $("#nav").load("nav.html"); 
+    $("#hero").load("hero.html");
+    $("#modal").load("modal.html");
+    $("#footer").load("footer.html"); 
+    });
+    </script>
+
 </head>
 <body>
     
 
 <!-- HEADER SECTION -->
-
-<!-- NAV - Carlos -->
-
-<!-- HERO - Carlos -->
-
+<div id="nav"></div>
+<div id="hero"></div>
 <!-- BODY SECTION -->
 
 <!-- TEXT - Christian -->

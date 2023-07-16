@@ -40,6 +40,11 @@
     font-size: 6rem
 }
 
+
+.card-body {
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+
 .p-10{
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -50,6 +55,14 @@
 }
 
 hr{margin:auto}
+
+.modal-body{
+    padding: 30px;
+}
+
+.btn-small{
+    width: 50%;
+}
 
 .info {
     display:flex;
