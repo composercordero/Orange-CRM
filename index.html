@@ -10,102 +10,25 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+    <script>
+    $(function(){
+    $("#nav").load("nav.html"); 
+    $("#hero").load("hero.html"); 
+    $("#footer").load("footer.html"); 
+    });
+    </script>
+
 </head>
 <body>
     
 <div class="container-fluid">
 <!-- HEADER SECTION -->
-
-<!-- NAV - Carlos -->
-    <div class="row pb-5">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid px-5">
-
-               <!-- LOGO -->
-                <a class="navbar-brand col-md-8 col-lg-3 me-0" href="#">
-                    <img src="images/Logo.png" alt="DoubleTap" style="width: 12vw;">
-                </a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse col-md-4 d-lg-flex text-center" id="navbarTogglerDemo02">
-                    
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-lg-6 justify-content-lg-between">
-                       
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="how-it-works.html">How it Works</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="support.html">Support</a>
-                        </li>
-                        
-                    </ul>
-
-                    <!-- Button trigger modal -->
-                    <div class="nav-buttons gap-4 d-lg-flex col-lg-3 justify-content-lg-end">
-                        
-                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign In</button>
-
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Try If Free</button>
-
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-
-<!-- HERO - Carlos -->
-
-    <div class="row">
-        <div class="col-1"></div>
-        <div class="col-10 col-lg-5 text-center text-lg-start hero">
-            <h1 class="title fw-bold">Focus on <br>Your Business</h1>
-            <span class="fs-2 fw-bold">Let Us Handle Everything Else</span>
-            <p class="fs-5 fw-semibold text-body-tertiary my-4">Subscription Billing, powered with revenue retention tools and a seamless customer experience - without the technical hurdles.</p>
-            
-            <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                Sign Up Free
-                <i class="bi bi-arrow-right-short"></i>
-            </a>
-
-            <a type="button" class="btn btn-outline-primary">
-                <i class="bi bi-chat-left-dots-fill"></i>
-                Chat With Us
-            </a>
-            
-            <p class="text-body-tertiary mt-4">Already using <span class="fw-bold">Double</span>Tap? <a href="#">Sign In</a></p>
-            
-            <div class="info d-flex align-items-center trial lh-sm justify-content-center justify-content-lg-start">
-                <p class="m-0">Free 14 day trial</p>
-                <i class="bi bi-dot fs-1 text-body-primary"></i>
-                <p class="m-0">Manage Customers in Minutes</p>
-                <i class="bi bi-dot fs-1 text-body-primary"></i>
-                <p class="m-0">Cancel at Anytime</p>
-            </div>
-                
-        </div>
-        <div class="col-5 d-flex justify-content-center align-content-center d-none d-lg-block">
-            <img src="images/Header-Side-1.png" class="img-fluid" alt="Options">
-        </div>
-        <div class="col-1"></div>
-    </div>
-
-
+<div id="nav"></div>
+<div id="hero"></div>
 <!-- BODY SECTION -->
 
 <!-- TEXT - Christian -->
@@ -319,8 +242,12 @@
 
 <!-- SCRIPT -->
 <script src="script.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+
 
 </body>
 </html>
