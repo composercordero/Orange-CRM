@@ -2,6 +2,11 @@
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
 /* HEADER */
 
 
@@ -14,7 +19,7 @@
 }
 
 .trial i{
-    color: var(--bs-primary)
+    color: var(--bs-primary);
 }
 
 /* MAIN */
@@ -35,9 +40,26 @@
     font-size: 6rem
 }
 
+
 .card-body {
     border-top-right-radius: 2%;
     border-bottom-right-radius: 2%;
+
+.p-10{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.center{
+    width: auto;
+}
+
+.modal-body{
+    padding: 30px;
+}
+
+.btn-small{
+    width: 50%;
 }
 
 

@@ -10,85 +10,26 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+    <script>
+    $(function(){
+    $("#nav").load("nav.html"); 
+    $("#hero").load("hero.html");
+    $("#modal").load("modal.html");
+    $("#footer").load("footer.html"); 
+    });
+    </script>
+
 </head>
 <body>
     
 <div class="container-fluid">
 <!-- HEADER SECTION -->
-
-<!-- NAV - Carlos -->
-    <div class="row">
-            <div class="container-fluid gap-5">
-        <nav class="navbar navbar-expand-lg ">
-                <a class="navbar-brand" href="#">
-                    <img src="images/Logo.png" alt="DoubleTap">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="how-it-works.html">How it Works</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Support</a>
-                        </li>
-                    </ul>
-                    <div class="nav-buttons d-flex gap-4">
-                        <button type="button" class="btn btn-outline-primary">Sign In</button>
-                        <button type="button" class="btn btn-primary">Try If Free</button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-
-<!-- HERO - Carlos -->
-
-    <div class="row">
-        <div class="col-7 p-5 hero">
-            <h1 class="title fw-bold">Focus on <br>Your Business</h1>
-            <span class="fs-2 fw-bold">Let Us Handle Everything Else</span>
-            <p class="fs-5 fw-semibold text-body-tertiary my-4">Subscription Billing, powered with revenue retention tools and a seamless customer experience - without the technical hurdles.</p>
-            
-            <a type="button" class="btn btn-primary">
-                Sign Up Free
-                <i class="bi bi-arrow-right-short"></i>
-            </a>
-
-            <a type="button" class="btn btn-outline-primary">
-                <i class="bi bi-chat-left-dots-fill"></i>
-                Chat With Us
-            </a>
-            
-            <p class="text-body-tertiary mt-4">Already using <span class="fw-bold">Double</span>Tap? <a href="#">Sign In</a></p>
-            
-            <div class="info d-flex align-items-center trial">
-                <p class="m-0">Free 14 day trial</p>
-                <i class="bi bi-dot fs-1 text-body-primary"></i>
-                <p class="m-0">Manage Customers in Minutes</p>
-                <i class="bi bi-dot fs-1 text-body-primary"></i>
-                <p class="m-0">Cancel at Anytime</p>
-            </div>
-                
-        </div>
-        <div class="col-5 estaes">
-            <img src="images/Header-Side-1.png" class="img-fluid" alt="">
-            
-        </div>
-    </div>
-
-
+<div id="nav"></div>
+<div id="hero"></div>
 <!-- BODY SECTION -->
 
 <!-- TEXT - Christian -->
@@ -103,9 +44,10 @@
 
 <!-- LAYOUT - Christian -->
 
-<div class="row m-5">
-    <div class="col-2"></div>
-    <div class="col-2">
+<div class="row row-cols-2 m-5 row-gap-5">
+    <div class="col-1 col-lg-2 d-none d-lg-block"></div>
+
+    <div class="col-12 col-md-6 col-lg-2">
         <div class="card layout">
             <i class="bi bi-currency-dollar text-center"></i>
             <div class="card-body">
@@ -113,15 +55,15 @@
         </div></div>
     </div>
 
-    <div class="col-2">
+    <div class="col-12 col-md-6 col-lg-2">
         <div class="card layout">
             <i class="bi bi-person-fill text-center"></i>
             <div class="card-body">
             <p class="text-center card-title">Retain</p>
         </div></div>
     </div>
-
-    <div class="col-2">
+    
+    <div class="col-12 col-md-6 col-lg-2">
         <div class="card layout">
             <i class="bi bi-bar-chart-fill text-center"></i>
             <div class="card-body">
@@ -129,7 +71,7 @@
         </div></div>
     </div>
 
-    <div class="col-2">
+    <div class="col-12 col-md-6 col-lg-2">
         <div class="card layout">
             <i class="bi bi-arrow-left-right text-center"></i>
             <div class="card-body">
@@ -137,15 +79,16 @@
         </div></div>
     </div>
 
-    <div class="col-2"></div>
+    <div class="col-1 col-lg-2 d-none d-lg-block"></div>
 </div>
 
 <!-- CARD - Jake -->
-<div class="row">
-    <div class="col-2"></div>
-    <div class="col-8 my-5">
+<div class="row h-100">
+    <div class="col-1"></div>
+    <div class="col-10 my-5">
         <div class="card">
             <div class="row g-1">
+
                 <div class="col-md-4">
                 <img src="./DoubleTapAssets/landing/credit-card-picture.png" class="img-fluid rounded-start position-relative top-50 start-50 translate-middle" alt="Credit Card Image">
             </div>
@@ -174,47 +117,48 @@
                     
                                                          
         </div>
+
+          <!-- ORIGINAL -->
+                <div class="col-md-4 d-flex align-items-center">
+                    <img src="images/credit-card-picture.png" class="img-fluid rounded-start center" alt="Credit Card Image">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body text-bg-primary p-10">
+                        <h5 class="card-title">Start Accepting payments with Ease</h5>
+                        <p class="card-text">Deliver the world of payment options and seamless checkout experiences, making it easy for your customers to pay you for your products and services.</p>
+                        <ul class="text-body-tertiary-white text-sm">
+                            <li>Accept credit & debit cards, Paypal, ACH, Apple pay and more with the flick of a switch</li>
+                            <li>Process transactions in up to 32 different currencies</li>
+                            <li>Integrate with popular payment gateways like Stripr, and Braintree</li>
+                            <li>Select from a variety of different checkout options and experiences</li>
+                        </ul>
+                    </div>  
+                </div>
             </div>
         </div>
     </div>
-    <div class="col-2"></div>
+    <div class="col-1"></div>
 </div>
+
 <!-- FOOTER - Christian -->
 
-<div class="row bg-primary py-5" class="text-center">
-    <div class="col text-center">
+<div id="footer"></div>
 
-        <h4 class="fw-bold text-light">Try Double Tap Today!</h4>
-        <p class="footer text-light"><strong>Let's Get Started</strong></p>
+<!-- MODAL Carlos -->
+<div id="modal"></div>
 
-        <a type="button" class="btn btn-success">
-            Get Started
-        <i class="bi bi-arrow-right-short"></i>
-        </a>
 
-        <a type="button" class="btn btn-light text-body-primary">
-        <i class="bi bi-chat-left-dots-fill"></i>
-        Chat With Us
-        </a>
-        
-        <div class="info d-flex align-items-center text-body-tertiary pb-5">
-            <p class="m-0">Free 14 day trial</p>
-            <i class="bi bi-dot fs-1 text-body-primary"></i>
-            <p class="m-0">Manage Customers in Minutes</p>
-            <i class="bi bi-dot fs-1 text-body-primary"></i>
-            <p class="m-0">Cancel at Anytime</p>
-        </div>
-
-</div>
-</div>
+<!-- END OF CONTAINER -->
 </div>
 
-<!-- END -->
-</div>
-    <!-- SCRIPT -->
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+<!-- SCRIPT -->
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+
 
 </body>
 </html>
