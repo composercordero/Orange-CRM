@@ -54,6 +54,8 @@
     width: auto;
 }
 
+hr{margin:auto}
+
 .modal-body{
     padding: 30px;
 }
@@ -62,5 +64,15 @@
     width: 50%;
 }
 
+.info {
+    display:flex;
+    justify-content: center;
+}
 
+.card-img-top {
+    border-radius: 10%;
+    width: 75%;
+
+}
 /* FOOTER */
+
