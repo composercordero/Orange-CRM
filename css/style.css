@@ -41,19 +41,22 @@
 }
 
 
-.card-body {
-    border-top-right-radius: 2%;
-    border-bottom-right-radius: 2%;
-}
+
 
 .p-10{
     padding-top: 10rem;
     padding-bottom: 10rem;
 }
 
+.fs-10{
+    font-size: 8rem;
+}
+
 .center{
     width: auto;
 }
+
+hr{margin:auto}
 
 .modal-body{
     padding: 30px;
@@ -63,5 +66,15 @@
     width: 50%;
 }
 
+.info {
+    display:flex;
+    justify-content: center;
+}
 
+.card-img-top {
+    border-radius: 10%;
+    width: 75%;
+
+}
 /* FOOTER */
+
